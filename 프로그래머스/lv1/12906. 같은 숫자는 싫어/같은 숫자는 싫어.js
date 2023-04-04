@@ -1,4 +1,12 @@
-function solution(arr){
-// const newArray = arr.filter(callbackFunction(element, index, array), thisArg);
-    return arr.filter((num, index) => num !== arr[index -1])
+function solution(arr)
+{
+    var answer = [];
+        for(var i = 0; i<arr.length; i++){
+          if(arr[i] == arr[i+1]){
+            continue;
+          }else{
+               answer.push(arr[i])
+           }
+      }
+  return answer;
 }
